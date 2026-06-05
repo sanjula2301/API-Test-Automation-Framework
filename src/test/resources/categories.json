@@ -1,0 +1,11 @@
+[
+  {
+    "name": "API defects",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*Expected status code.*"
+  },
+  {
+    "name": "Test defects",
+    "matchedStatuses": ["broken"]
+  }
+]

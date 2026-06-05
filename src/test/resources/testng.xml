@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Fintech API Test Suite" verbose="1" thread-count="1">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Crypto API Tests">
+        <classes>
+            <class name="com.fintech.api.tests.CryptoApiTests"/>
+        </classes>
+    </test>
+
+    <test name="Exchange Rate API Tests">
+        <classes>
+            <class name="com.fintech.api.tests.ExchangeRateApiTests"/>
+        </classes>
+    </test>
+
+    <test name="Booking API Tests - Auth and CRUD">
+        <classes>
+            <class name="com.fintech.api.tests.RestfulBookerApiTests"/>
+        </classes>
+    </test>
+
+</suite>
